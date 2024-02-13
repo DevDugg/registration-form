@@ -9,7 +9,7 @@ interface IProps extends PropsWithChildren {
 
 const BlurredOverlay = ({ height, width, children }: IProps) => {
   return (
-    <div className="backdrop-blur-[20px] bg-BLACK35 relative -z-10 pointer-events-none" style={{ height, width }}>
+    <div className="backdrop-blur-[20px] bg-BLACK35 relative z-10" style={{ height, width }}>
       <Image
         src={"/noise.png"}
         alt="noise"
