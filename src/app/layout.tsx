@@ -2,7 +2,7 @@ import "./globals.css";
 
 import { Bebas_Neue, Space_Grotesk } from "next/font/google";
 
-import Background from "../../components/Background";
+import Background from "@/components/Background";
 import type { Metadata } from "next";
 
 const spacegr = Space_Grotesk({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
