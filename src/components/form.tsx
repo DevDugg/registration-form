@@ -47,7 +47,7 @@ const Form = () => {
           {...register("name")}
           type="text"
           placeholder="Name"
-          className="p-4 w-full rounded-lg border border-WHITE bg-transparent text-WHITE placeholder:text-WHITE outline-none"
+          className="px-4 py-3 w-full rounded-lg border border-WHITE bg-transparent text-WHITE placeholder:text-WHITE outline-none"
         />
         {errors.name && <span className="text-red-600 text-xs font-bold">Name is required</span>}
       </div>
@@ -56,7 +56,7 @@ const Form = () => {
           {...register("email")}
           type="email"
           placeholder="Email"
-          className="p-4 w-full rounded-lg border border-WHITE bg-transparent text-WHITE placeholder:text-WHITE outline-none"
+          className="px-4 py-3 w-full rounded-lg border border-WHITE bg-transparent text-WHITE placeholder:text-WHITE outline-none"
         />
         {errors.email && <span className="text-red-600 text-xs font-bold">A valid email is required</span>}
       </div>
@@ -65,7 +65,7 @@ const Form = () => {
           {...register("password")}
           type="password"
           placeholder="Password"
-          className="p-4 w-full rounded-lg border border-WHITE bg-transparent text-WHITE placeholder:text-WHITE outline-none"
+          className="px-4 py-3 w-full rounded-lg border border-WHITE bg-transparent text-WHITE placeholder:text-WHITE outline-none"
         />
         {errors.password && <span className="text-red-600 text-xs font-bold">A strong password is required</span>}
       </div>
