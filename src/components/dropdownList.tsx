@@ -15,9 +15,12 @@ const DropdownList = () => {
   ];
 
   const { isOpen } = useDropdownContext();
+
+  console.log(isOpen);
+
   return (
     <m.ul
-      className="dropdown-list absolute right-0 -bottom-2 bg-WHITE35 rounded-lg h-0"
+      className="dropdown-list absolute right-0 -bottom-2 w-full bg-WHITE35 rounded-lg overflow-hidden"
       variants={dropdownMotion}
       transition={defaultTransition}
       initial="initial"
