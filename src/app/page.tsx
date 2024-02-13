@@ -1,3 +1,4 @@
+import AlreadyHasAccount from "@/components/alreadyHasAccount";
 import BlurredOverlay from "@/components/blurredOverlay";
 import Form from "@/components/form";
 import GoogleButton from "@/components/googleButton";
@@ -11,11 +12,12 @@ export default function Home() {
       <BlurredOverlay height={"fit-content"} width={"50vw"} className="content flex flex-col gap-16 p-10">
         <Header />
         <div className="flex justify-center">
-          <div className="form-wrapper flex flex-col items-center gap-10 max-w-[484px]">
+          <div className="form-wrapper flex flex-col items-center gap-8 max-w-lg w-full">
             <Welcome />
             <GoogleButton />
             <Separator text="or" />
             <Form />
+            <AlreadyHasAccount />
           </div>
         </div>
       </BlurredOverlay>
