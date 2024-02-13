@@ -5,3 +5,5 @@ const colors = {
   BLACK35: "rgba(39, 39, 39, .35)",
   WHITE35: "rgba(242, 242, 242, .35)",
 };
+
+export default colors;
