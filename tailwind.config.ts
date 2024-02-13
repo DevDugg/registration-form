@@ -17,7 +17,7 @@ const config: Config = {
         WHITE35: "rgba(242, 242, 242, .35)",
       },
       fontFamily: {
-        BEBAS: ["--BEBAS", ...fontFamily.sans],
+        BEBAS: ["var(--BEBAS)", ...fontFamily.sans],
       },
     },
   },

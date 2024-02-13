@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${spacegr.className} ${bebasneue.variable} text-WHITE`}>
+      <body className={`${bebasneue.variable} ${spacegr.className} text-WHITE`}>
         <Background />
         {children}
       </body>
