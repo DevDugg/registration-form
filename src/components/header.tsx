@@ -1,5 +1,5 @@
-import Dropdown from "./Dropdown";
-import Logo from "./Logo";
+import Dropdown from "./dropdown";
+import Logo from "./logo";
 
 const Header = () => {
   return (
