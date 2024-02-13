@@ -10,7 +10,8 @@ const bebasneue = Bebas_Neue({ subsets: ["latin"], weight: "400", variable: "--B
 
 export const metadata: Metadata = {
   title: "Registration Form",
-  description: "Registration form using Next.js, TypeScript, Tailwind CSS, reach-hook-form, zod, and SOLID principles.",
+  description:
+    "Registration form using Next.js, TypeScript, Tailwind CSS, framer-motion, reach-hook-form, zod, and SOLID principles.",
 };
 
 export default function RootLayout({
