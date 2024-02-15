@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
+import buttonMotion from "@/animation/buttonMotion";
 import defaultTransition from "@/animation/transition";
-import { dropdownItemMotion } from "@/animation/dropdownMotion";
 import { motion } from "framer-motion";
 import { useDropdownContext } from "@/providers/dropdownContext";
 
@@ -17,7 +17,7 @@ const DropdownItem = ({ flag, text }: IProps) => {
     <motion.li
       className="flex items-center gap-1 w-full px-3 py-2 border-y-[0.5] border-WHITE"
       onClick={() => setIsOpen(false)}
-      variants={dropdownItemMotion}
+      variants={buttonMotion}
       transition={defaultTransition}
       initial="initial"
       whileHover="hover"

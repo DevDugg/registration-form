@@ -1,5 +1,4 @@
 import { Variants } from "framer-motion";
-import colors from "@/colors";
 
 const dropdownMotion: Variants = {
   initial: {
@@ -15,14 +14,4 @@ const dropdownMotion: Variants = {
   },
 };
 
-const dropdownItemMotion: Variants = {
-  initial: {
-    background: colors.WHITE35,
-  },
-
-  hover: {
-    background: colors.BLACK35,
-  },
-};
-
-export { dropdownMotion, dropdownItemMotion };
+export { dropdownMotion };

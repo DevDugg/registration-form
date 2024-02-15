@@ -1,5 +1,5 @@
-export const duration = 0.4;
-export const easing = "easeOut";
+export const duration = 0.3;
+export const easing = "easeInOut";
 export const delay = 0;
 export const type = "tween";
 
