@@ -17,11 +17,8 @@ const DropdownContextProvider = ({ children }: PropsWithChildren) => {
 };
 
 const useDropdownContext = () => {
-  const context = DropdownContent;
-  if (!context) {
-    throw new Error("useDropdownContent must be used within a DropdownContentProvider");
-  }
-  return useContext(context);
+  const { isOpen, setIsOpen } = useContext(DropdownContent);
+  return { isOpen, setIsOpen };
 };
 
 export { DropdownContent, DropdownContextProvider, useDropdownContext };

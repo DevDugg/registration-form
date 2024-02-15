@@ -3,12 +3,14 @@ import colors from "@/colors";
 
 const dropdownMotion: Variants = {
   initial: {
-    height: 0,
+    rotateY: "-20deg",
+    pointerEvents: "none",
     opacity: 0,
   },
 
   active: {
-    height: "auto",
+    rotateY: "0deg",
+    pointerEvents: "all",
     opacity: 1,
   },
 };
@@ -19,7 +21,7 @@ const dropdownItemMotion: Variants = {
   },
 
   hover: {
-    background: colors.WHITE,
+    background: colors.BLACK35,
   },
 };
 

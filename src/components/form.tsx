@@ -23,7 +23,7 @@ const Form = () => {
   const schema = z.object({
     name: z.string().min(1),
     email: z.string().email(),
-    password: z.string().regex(/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/),
+    password: z.string().regex(/^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/),
   });
   const {
     register,

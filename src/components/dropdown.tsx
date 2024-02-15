@@ -17,6 +17,7 @@ const InnerDropdown = () => {
         <span className="text-base">EN</span>
       </div>
       <Image src={"/arrow-down.svg"} alt="arrow" width={20} height={20} className="w-5 h-5 object-contain" />
+      <DropdownList />
     </div>
   );
 };
@@ -25,7 +26,6 @@ const Dropdown = () => {
   return (
     <DropdownContextProvider>
       <InnerDropdown />
-      <DropdownList />
     </DropdownContextProvider>
   );
 };

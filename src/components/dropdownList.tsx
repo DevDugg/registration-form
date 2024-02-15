@@ -3,7 +3,7 @@
 import DropdownItem from "./dropdownItem";
 import defaultTransition from "@/animation/transition";
 import { dropdownMotion } from "@/animation/dropdownMotion";
-import { m } from "framer-motion";
+import { motion } from "framer-motion";
 import { useDropdownContext } from "@/providers/dropdownContext";
 
 const DropdownList = () => {
@@ -16,20 +16,18 @@ const DropdownList = () => {
 
   const { isOpen } = useDropdownContext();
 
-  console.log(isOpen);
-
   return (
-    <m.ul
-      className="dropdown-list absolute right-0 -bottom-2 w-full bg-WHITE35 rounded-lg overflow-hidden"
-      variants={dropdownMotion}
+    <motion.ul
+      className="dropdown-list absolute right-0 top-[120%] w-full bg-WHITE35 rounded-lg overflow-hidden"
       transition={defaultTransition}
+      variants={dropdownMotion}
       initial="initial"
       animate={isOpen ? "active" : "initial"}
     >
       {dropdownItems.map((item, index) => (
         <DropdownItem key={index} flag={item.flag} text={item.text} />
       ))}
-    </m.ul>
+    </motion.ul>
   );
 };
 export default DropdownList;
