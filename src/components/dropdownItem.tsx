@@ -15,7 +15,7 @@ const DropdownItem = ({ flag, text }: IProps) => {
   const { setIsOpen } = useDropdownContext();
   return (
     <motion.li
-      className="flex items-center gap-1 w-full px-3 py-2 border-y-[0.5] border-WHITE"
+      className="flex items-center gap-1 w-full px-4 py-3 border-y-[0.5] border-WHITE"
       onClick={() => setIsOpen(false)}
       variants={buttonMotion}
       transition={defaultTransition}
